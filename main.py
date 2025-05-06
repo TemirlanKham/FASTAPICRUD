@@ -11,7 +11,6 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# CORS для фронта
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
